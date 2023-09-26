@@ -33,11 +33,9 @@ def bipartiteLabelPartition(G):
             label = abs(label - 1)
 
     if isBipartite(label_partition):
-        print("The graph is a bipartite graph")
-        print(label_partition)
+        print("The graph is a bipartite graph\n", label_partition)
         return label_partition
-    print("The graph is an odd cycle")
-    print(label_partition)
+    print("The graph is an odd cycle\n", label_partition)
     return label_partition
 
 
