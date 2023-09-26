@@ -2,7 +2,7 @@
 ## Compulsory Assignment 1, due October 2nd, 20:00
 ## Set Theory:
  
- 
+ $a /notin b$ 
 ### b) ∪ and ∩
 
 1. **∪** is the union operator, while **∩** is the intersection operator.
@@ -45,5 +45,7 @@
 2. If some element is present in a set, then this element is an element of that set. E.g., an integer 1 is an element of the set of all integers, while a string “hello” is not an element of the set of all integers.
 3. **Correct:**
    - 1 $\in$ {0, 1}
-   - 100 $\notin$ {0, 1}
+   - $100 \notin {0, 1}$
+   - $ \forall \, x \in (1,2) $
+   - 
 
