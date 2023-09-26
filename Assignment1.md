@@ -1,5 +1,14 @@
+<<<<<<< HEAD
+# INF234 — Algorithms 
+## Compulsory Assignment 1, due October 2nd, 20:00
+## Set Theory:
+ 
+ $a /notin b$ 
+### b) ∪ and ∩
+=======
 # INF234 — Algorithms
 **Compulsory Assignment 1, due October 2nd, 20:00**
+>>>>>>> eb439077cf03c7f412feb5ecc9692698aff2f1e6
 
 ## Set Theory:
 
@@ -56,6 +65,15 @@
     - {1, 2, 3, 4}\{1, 2, 3} = {1, 2, 3}
     - {1, 2, 3, 4}\{1, 2, 3} = {1, 2, 3, 1, 2, 3, 4}
 
+<<<<<<< HEAD
+1. **∈** is the symbol for «is an element of» and **∈/** is the symbol for ”is not an element of”.
+2. If some element is present in a set, then this element is an element of that set. E.g., an integer 1 is an element of the set of all integers, while a string “hello” is not an element of the set of all integers.
+3. **Correct:**
+   - 1 $\in$ {0, 1}
+   - $100 \notin {0, 1}$
+   - $ \forall \, x \in (1,2) $
+   - 
+=======
 ### g) ||
 - Cardinality
 - Denotes the number of elements in a set.
@@ -65,4 +83,3 @@
 - **Incorrect:**
     - |{1, 2, 3, 6}| = 6
     - |days_in_a_week| = 1
-
