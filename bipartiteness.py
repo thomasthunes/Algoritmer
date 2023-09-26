@@ -9,29 +9,28 @@ def isBipartite(p):
     return True
 
 
-def bipartiteLabelPartition(G):  # total runtime is O(V + E)
-    queue = deque([G.V[0]])  # O(1)
-    visited = []  # O(1)
-    label_partition = {  # O(1)
+def bipartiteLabelPartition(G):
+    queue = deque([G.V[0]])
+    visited = []
+    label_partition = {
         0: [G.V[0]],
         1: []
     }
-
     label = 1
-    while len(queue) != 0:  # O(nodes)
-        node = queue.popleft()  # O(1)
-        visited.append(node)  # O(1)
+    while len(queue) != 0:
+        node = queue.popleft()
+        visited.append(node)
 
-        all_neigh_unvisited = True  # O(1)
-        for neigh in G.N[node]:  # O(edges)
-            if neigh not in visited:  # O(1)
-                queue.append(neigh)  # O(1)
-                label_partition[label].append(neigh)  # O(1)
+        all_neigh_unvisited = True
+        for neigh in G.N[node]:
+            if neigh not in visited:
+                queue.append(neigh)
+                label_partition[label].append(neigh)
             else:
-                all_neigh_unvisited = False  # O(1)
+                all_neigh_unvisited = False
 
-        if all_neigh_unvisited:  # O(1)
-            label = abs(label - 1)  # O(1)
+        if all_neigh_unvisited:
+            label = abs(label - 1)
 
     if isBipartite(label_partition):
         print("The graph is a bipartite graph")
